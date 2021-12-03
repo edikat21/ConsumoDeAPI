@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+  <link rel="stylesheet" href="style.css">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD ROL</title>
+</head>
+<header>
+  <div class="inicio">
+  <div class="logo">
+    <a>SysSeguridad</a>
+  </div> 
+<nav>
+  <a>Inicio</a>
+  <a>Rol</a>
+  <a>Usuario</a>
+  <a>Cambiar Password</a>
+</nav>
+</div>
+</header>
+<body> 
+    <section class="crud">
+        <article>           
+          <input class="barra" type="text" name="rol" placeholder="Ingrese rol" required>
+            <form class="crud-form">                      
+                <input class="botons"  type="submit" value="Buscar">              
+                <input class="botons" type="submit" value="Crear">              
+            </form>
+        </article>
+
+    </section>
+    <template id="crud-template">
+        <tr>
+            <td class="nombre"></td>
+            <td>
+                <button class="edit">Editar</button>
+                <button class="update">Guardar</button>
+                <button class="delete">Eliminar</button>
+
+            </td>
+        </tr>
+    </template>  
+    <table>
+      <th>Nombre</th>     
+      <th>Acciones</th>
+    </table>
+<footer>
+  <input class="botons"  type="submit" value="Eliminar">
+  <input class="botons"  type="submit" value="Editar">
+</footer>
+</body>
+
+</html>
